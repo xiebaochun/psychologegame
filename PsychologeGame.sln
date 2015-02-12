@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsychologeGame", "PsychologeGame\PsychologeGame\PsychologeGame.csproj", "{C483E544-EA13-4DFD-8B13-8280D60AB94A}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PsychologeGameContent", "PsychologeGame\PsychologeGameContent\PsychologeGameContent.contentproj", "{4116408C-CCAA-4911-BB13-79B5AF58FB89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C483E544-EA13-4DFD-8B13-8280D60AB94A}.Debug|x86.ActiveCfg = Debug|x86
+		{C483E544-EA13-4DFD-8B13-8280D60AB94A}.Debug|x86.Build.0 = Debug|x86
+		{C483E544-EA13-4DFD-8B13-8280D60AB94A}.Release|x86.ActiveCfg = Release|x86
+		{C483E544-EA13-4DFD-8B13-8280D60AB94A}.Release|x86.Build.0 = Release|x86
+		{4116408C-CCAA-4911-BB13-79B5AF58FB89}.Debug|x86.ActiveCfg = Debug|x86
+		{4116408C-CCAA-4911-BB13-79B5AF58FB89}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

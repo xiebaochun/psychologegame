@@ -1,0 +1,2036 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4116408C-CCAA-4911-BB13-79B5AF58FB89}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>PsychologeGameContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Sounds\SE\Aggression.wav">
+      <Name>Aggression</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Applause.wav">
+      <Name>Applause</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Assertive.wav">
+      <Name>Assertive</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\EachStage.wav">
+      <Name>EachStage</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\intro.wav">
+      <Name>intro</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Passive Aggression.wav">
+      <Name>Passive Aggression</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Selection.wav">
+      <Name>Selection</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Stage1_start.wav">
+      <Name>Stage1_start</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Stage2_start.wav">
+      <Name>Stage2_start</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Stage3_Start.wav">
+      <Name>Stage3_Start</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Stage4_Start.wav">
+      <Name>Stage4_Start</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Submissive.wav">
+      <Name>Submissive</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\bg-01.png">
+      <Name>bg-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\BackGround\bg-02.png">
+      <Name>bg-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\BackGround\bg-05.png">
+      <Name>bg-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\BackGround\Q1.png">
+      <Name>Q1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Options\A.png">
+      <Name>A</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Options\B.png">
+      <Name>B</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Options\C.png">
+      <Name>C</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Options\D.png">
+      <Name>D</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Effects\SpriteEffect.fx">
+      <Name>SpriteEffect</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\stage\Stage.png">
+      <Name>Stage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\stage\StageNumber.png">
+      <Name>StageNumber</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Ans\1\Ans_01.png">
+      <Name>Ans_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\1\Ans_02.png">
+      <Name>Ans_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\1\Ans_03.png">
+      <Name>Ans_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\1\Ans_04.png">
+      <Name>Ans_04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\2\Ans_01.png">
+      <Name>Ans_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\2\Ans_02.png">
+      <Name>Ans_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\2\Ans_03.png">
+      <Name>Ans_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\2\Ans_04.png">
+      <Name>Ans_04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\3\Ans_01.png">
+      <Name>Ans_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\3\Ans_02.png">
+      <Name>Ans_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\3\Ans_03.png">
+      <Name>Ans_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\3\Ans_04.png">
+      <Name>Ans_04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\4\Ans_01.png">
+      <Name>Ans_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\4\Ans_02.png">
+      <Name>Ans_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\4\Ans_03.png">
+      <Name>Ans_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\4\Ans_04.png">
+      <Name>Ans_04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_111.png">
+      <Name>Cont_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_112.png">
+      <Name>Cont_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_113.png">
+      <Name>Cont_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_114.png">
+      <Name>Cont_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_121.png">
+      <Name>Cont_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_122.png">
+      <Name>Cont_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_123.png">
+      <Name>Cont_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_124.png">
+      <Name>Cont_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_131.png">
+      <Name>Cont_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_132.png">
+      <Name>Cont_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_133.png">
+      <Name>Cont_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_134.png">
+      <Name>Cont_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_141.png">
+      <Name>Cont_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_142.png">
+      <Name>Cont_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_143.png">
+      <Name>Cont_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\1\Cont_144.png">
+      <Name>Cont_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_111.png">
+      <Name>Cont_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_112.png">
+      <Name>Cont_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_113.png">
+      <Name>Cont_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_114.png">
+      <Name>Cont_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_121.png">
+      <Name>Cont_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_122.png">
+      <Name>Cont_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_123.png">
+      <Name>Cont_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_124.png">
+      <Name>Cont_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_131.png">
+      <Name>Cont_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_132.png">
+      <Name>Cont_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_133.png">
+      <Name>Cont_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_134.png">
+      <Name>Cont_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_141.png">
+      <Name>Cont_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_142.png">
+      <Name>Cont_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_143.png">
+      <Name>Cont_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\2\Cont_144.png">
+      <Name>Cont_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_111.png">
+      <Name>Cont_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_112.png">
+      <Name>Cont_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_113.png">
+      <Name>Cont_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_114.png">
+      <Name>Cont_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_121.png">
+      <Name>Cont_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_122.png">
+      <Name>Cont_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_123.png">
+      <Name>Cont_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_124.png">
+      <Name>Cont_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_131.png">
+      <Name>Cont_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_132.png">
+      <Name>Cont_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_133.png">
+      <Name>Cont_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_134.png">
+      <Name>Cont_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_141.png">
+      <Name>Cont_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_142.png">
+      <Name>Cont_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_143.png">
+      <Name>Cont_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\3\Cont_144.png">
+      <Name>Cont_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_111.png">
+      <Name>Cont_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_112.png">
+      <Name>Cont_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_113.png">
+      <Name>Cont_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_114.png">
+      <Name>Cont_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_121.png">
+      <Name>Cont_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_122.png">
+      <Name>Cont_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_123.png">
+      <Name>Cont_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_124.png">
+      <Name>Cont_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_131.png">
+      <Name>Cont_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_132.png">
+      <Name>Cont_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_133.png">
+      <Name>Cont_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_134.png">
+      <Name>Cont_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_141.png">
+      <Name>Cont_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_142.png">
+      <Name>Cont_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_143.png">
+      <Name>Cont_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Contents\4\Cont_144.png">
+      <Name>Cont_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_111.png">
+      <Name>Result_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_112.png">
+      <Name>Result_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_113.png">
+      <Name>Result_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_114.png">
+      <Name>Result_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_121.png">
+      <Name>Result_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_122.png">
+      <Name>Result_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_123.png">
+      <Name>Result_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_124.png">
+      <Name>Result_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_131.png">
+      <Name>Result_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_132.png">
+      <Name>Result_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_133.png">
+      <Name>Result_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_134.png">
+      <Name>Result_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_141.png">
+      <Name>Result_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_142.png">
+      <Name>Result_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_143.png">
+      <Name>Result_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\1\Result_144.png">
+      <Name>Result_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_111.png">
+      <Name>Result_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_112.png">
+      <Name>Result_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_113.png">
+      <Name>Result_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_114.png">
+      <Name>Result_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_121.png">
+      <Name>Result_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_122.png">
+      <Name>Result_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_123.png">
+      <Name>Result_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_124.png">
+      <Name>Result_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_131.png">
+      <Name>Result_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_132.png">
+      <Name>Result_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_133.png">
+      <Name>Result_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_134.png">
+      <Name>Result_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_141.png">
+      <Name>Result_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_142.png">
+      <Name>Result_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_143.png">
+      <Name>Result_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\2\Result_144.png">
+      <Name>Result_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_111.png">
+      <Name>Result_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_112.png">
+      <Name>Result_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_113.png">
+      <Name>Result_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_114.png">
+      <Name>Result_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_121.png">
+      <Name>Result_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_122.png">
+      <Name>Result_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_123.png">
+      <Name>Result_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_124.png">
+      <Name>Result_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_131.png">
+      <Name>Result_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_132.png">
+      <Name>Result_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_133.png">
+      <Name>Result_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_134.png">
+      <Name>Result_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_141.png">
+      <Name>Result_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_142.png">
+      <Name>Result_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_143.png">
+      <Name>Result_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\3\Result_144.png">
+      <Name>Result_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_111.png">
+      <Name>Result_111</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_112.png">
+      <Name>Result_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_113.png">
+      <Name>Result_113</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_114.png">
+      <Name>Result_114</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_121.png">
+      <Name>Result_121</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_122.png">
+      <Name>Result_122</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_123.png">
+      <Name>Result_123</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_124.png">
+      <Name>Result_124</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_131.png">
+      <Name>Result_131</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_132.png">
+      <Name>Result_132</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_133.png">
+      <Name>Result_133</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_134.png">
+      <Name>Result_134</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_141.png">
+      <Name>Result_141</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_142.png">
+      <Name>Result_142</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_143.png">
+      <Name>Result_143</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Results\4\Result_144.png">
+      <Name>Result_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\bg-07.png">
+      <Name>bg-07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\bg-06.png">
+      <Name>bg-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Fonts\myFont.spritefont">
+      <Name>myFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Login\inputBox.png">
+      <Name>inputBox</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Login\login.png">
+      <Name>login</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Login\cursor.png">
+      <Name>cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Videos\WMV\1\A-D\1_1.wmv">
+      <Name>1_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\A-D\1_2.wmv">
+      <Name>1_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\A-D\1_3.wmv">
+      <Name>1_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\A-D\1_4.wmv">
+      <Name>1_4</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_11.wmv">
+      <Name>1_11</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_12.wmv">
+      <Name>1_12</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_13.wmv">
+      <Name>1_13</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_14.wmv">
+      <Name>1_14</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_21.wmv">
+      <Name>1_21</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_22.wmv">
+      <Name>1_22</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_23.wmv">
+      <Name>1_23</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_24.wmv">
+      <Name>1_24</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_31.wmv">
+      <Name>1_31</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_32.wmv">
+      <Name>1_32</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_33.wmv">
+      <Name>1_33</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_34.wmv">
+      <Name>1_34</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_41.wmv">
+      <Name>1_41</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_42.wmv">
+      <Name>1_42</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_43.wmv">
+      <Name>1_43</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\React\1_44.wmv">
+      <Name>1_44</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Result\1.1_End_d.wmv">
+      <Name>1.1_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Result\1.2_End_d.wmv">
+      <Name>1.2_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Result\1.3_End_d.wmv">
+      <Name>1.3_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Result\End_1.wmv">
+      <Name>End_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Result\End_2.wmv">
+      <Name>End_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Result\End_3.wmv">
+      <Name>End_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Transition\Pass.wmv">
+      <Name>Pass</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\1\Transition\Try Again.wmv">
+      <Name>Try Again</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\A-D\2_1.wmv">
+      <Name>2_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\A-D\2_2.wmv">
+      <Name>2_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\A-D\2_3.wmv">
+      <Name>2_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\A-D\2_4.wmv">
+      <Name>2_4</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_11.wmv">
+      <Name>2_11</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_12.wmv">
+      <Name>2_12</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_13.wmv">
+      <Name>2_13</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_14.wmv">
+      <Name>2_14</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_21.wmv">
+      <Name>2_21</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_22.wmv">
+      <Name>2_22</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_23.wmv">
+      <Name>2_23</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_24.wmv">
+      <Name>2_24</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_31.wmv">
+      <Name>2_31</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_32.wmv">
+      <Name>2_32</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_33.wmv">
+      <Name>2_33</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_34.wmv">
+      <Name>2_34</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_41.wmv">
+      <Name>2_41</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_42.wmv">
+      <Name>2_42</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_43.wmv">
+      <Name>2_43</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\React\2_44.wmv">
+      <Name>2_44</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Result\1.1_End_d.wmv">
+      <Name>1.1_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Result\1.2_End_d.wmv">
+      <Name>1.2_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Result\1.3_End_d.wmv">
+      <Name>1.3_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Result\1.4_End_d.wmv">
+      <Name>1.4_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Result\End_1.wmv">
+      <Name>End_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Result\End_2.wmv">
+      <Name>End_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Result\End_3.wmv">
+      <Name>End_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\2\Transition\Try Again.wmv">
+      <Name>Try Again</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\A-D\3_1.wmv">
+      <Name>3_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\A-D\3_2.wmv">
+      <Name>3_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\A-D\3_3.wmv">
+      <Name>3_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\A-D\3_4.wmv">
+      <Name>3_4</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_11.wmv">
+      <Name>3_11</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_12.wmv">
+      <Name>3_12</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_13.wmv">
+      <Name>3_13</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_14.wmv">
+      <Name>3_14</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_21.wmv">
+      <Name>3_21</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_22.wmv">
+      <Name>3_22</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_23.wmv">
+      <Name>3_23</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_24.wmv">
+      <Name>3_24</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_31.wmv">
+      <Name>3_31</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_32.wmv">
+      <Name>3_32</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_33.wmv">
+      <Name>3_33</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_34.wmv">
+      <Name>3_34</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_41.wmv">
+      <Name>3_41</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_42.wmv">
+      <Name>3_42</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_43.wmv">
+      <Name>3_43</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\React\3_44.wmv">
+      <Name>3_44</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Result\1.1_End_d.wmv">
+      <Name>1.1_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Result\1.2_End_d.wmv">
+      <Name>1.2_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Result\1.3_End_d.wmv">
+      <Name>1.3_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Result\1.4_End_d.wmv">
+      <Name>1.4_End_d</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Result\End_1.wmv">
+      <Name>End_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Result\End_2.wmv">
+      <Name>End_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Result\End_3.wmv">
+      <Name>End_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Transition\Pass.wmv">
+      <Name>Pass</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\3\Transition\Try Again.wmv">
+      <Name>Try Again</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\A-D\4_1.wmv">
+      <Name>4_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\A-D\4_2.wmv">
+      <Name>4_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\A-D\4_3.wmv">
+      <Name>4_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\A-D\4_4.wmv">
+      <Name>4_4</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_11.wmv">
+      <Name>4_11</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_12.wmv">
+      <Name>4_12</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_13.wmv">
+      <Name>4_13</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_14.wmv">
+      <Name>4_14</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_21.wmv">
+      <Name>4_21</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_22.wmv">
+      <Name>4_22</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_23.wmv">
+      <Name>4_23</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_24.wmv">
+      <Name>4_24</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_31.wmv">
+      <Name>4_31</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_32.wmv">
+      <Name>4_32</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_33.wmv">
+      <Name>4_33</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_34.wmv">
+      <Name>4_34</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_41.wmv">
+      <Name>4_41</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_42.wmv">
+      <Name>4_42</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_43.wmv">
+      <Name>4_43</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\React\4_44.wmv">
+      <Name>4_44</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\Result\End_1.wmv">
+      <Name>End_1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\Result\End_2.wmv">
+      <Name>End_2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\Result\End_3.wmv">
+      <Name>End_3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\Transition\Pass.wmv">
+      <Name>Pass</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\4\Transition\Try Again.wmv">
+      <Name>Try Again</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\scene1.wmv">
+      <Name>scene1</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\scene2.wmv">
+      <Name>scene2</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\scene3.wmv">
+      <Name>scene3</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Videos\WMV\scene4.wmv">
+      <Name>scene4</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\Q2.png">
+      <Name>Q2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\Q3.png">
+      <Name>Q3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\Q4.png">
+      <Name>Q4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\A1_BG.png">
+      <Name>A1_BG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\A2_BG.png">
+      <Name>A2_BG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\A3_BG.png">
+      <Name>A3_BG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\A4_BG.png">
+      <Name>A4_BG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_11.png">
+      <Name>Ans2_11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_12.png">
+      <Name>Ans2_12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_13.png">
+      <Name>Ans2_13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_14.png">
+      <Name>Ans2_14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_21.png">
+      <Name>Ans2_21</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_22.png">
+      <Name>Ans2_22</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_23.png">
+      <Name>Ans2_23</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_24.png">
+      <Name>Ans2_24</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_31.png">
+      <Name>Ans2_31</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_32.png">
+      <Name>Ans2_32</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_33.png">
+      <Name>Ans2_33</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_34.png">
+      <Name>Ans2_34</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_41.png">
+      <Name>Ans2_41</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_42.png">
+      <Name>Ans2_42</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_43.png">
+      <Name>Ans2_43</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans2\Ans2_44.png">
+      <Name>Ans2_44</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_11.png">
+      <Name>Ans3_11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_12.png">
+      <Name>Ans3_12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_13.png">
+      <Name>Ans3_13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_14.png">
+      <Name>Ans3_14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_21.png">
+      <Name>Ans3_21</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_22.png">
+      <Name>Ans3_22</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_23.png">
+      <Name>Ans3_23</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_24.png">
+      <Name>Ans3_24</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_31.png">
+      <Name>Ans3_31</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_32.png">
+      <Name>Ans3_32</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_33.png">
+      <Name>Ans3_33</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_34.png">
+      <Name>Ans3_34</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_41.png">
+      <Name>Ans3_41</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_42.png">
+      <Name>Ans3_42</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_43.png">
+      <Name>Ans3_43</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans3\Ans3_44.png">
+      <Name>Ans3_44</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_11.png">
+      <Name>Ans1_11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_12.png">
+      <Name>Ans1_12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_13.png">
+      <Name>Ans1_13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_14.png">
+      <Name>Ans1_14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_21.png">
+      <Name>Ans1_21</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_22.png">
+      <Name>Ans1_22</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_23.png">
+      <Name>Ans1_23</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_24.png">
+      <Name>Ans1_24</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_31.png">
+      <Name>Ans1_31</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_32.png">
+      <Name>Ans1_32</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_33.png">
+      <Name>Ans1_33</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_34.png">
+      <Name>Ans1_34</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_41.png">
+      <Name>Ans1_41</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_42.png">
+      <Name>Ans1_42</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_43.png">
+      <Name>Ans1_43</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans1\Ans1_44.png">
+      <Name>Ans1_44</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_11.png">
+      <Name>Ans4_11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_12.png">
+      <Name>Ans4_12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_13.png">
+      <Name>Ans4_13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_14.png">
+      <Name>Ans4_14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_21.png">
+      <Name>Ans4_21</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_22.png">
+      <Name>Ans4_22</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_23.png">
+      <Name>Ans4_23</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_24.png">
+      <Name>Ans4_24</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_31.png">
+      <Name>Ans4_31</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_32.png">
+      <Name>Ans4_32</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_33.png">
+      <Name>Ans4_33</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_34.png">
+      <Name>Ans4_34</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_41.png">
+      <Name>Ans4_41</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_42.png">
+      <Name>Ans4_42</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_43.png">
+      <Name>Ans4_43</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\Ans\Random Ans4\Ans4_44.png">
+      <Name>Ans4_44</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\exit.png">
+      <Name>exit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Images\home.png">
+      <Name>home</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Sounds\SE\dialogue1.wav">
+      <Name>dialogue1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\dialogue2.wav">
+      <Name>dialogue2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\dialogue3.wav">
+      <Name>dialogue3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\dialogue4.wav">
+      <Name>dialogue4</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\next icon0.png">
+      <Name>next icon0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\next icon1.png">
+      <Name>next icon1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Sounds\SE\choose.wav">
+      <Name>choose</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\start.png">
+      <Name>start</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Sounds\SE\Stage1_scene_introduction.wav">
+      <Name>Stage1_scene_introduction</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Stage2_scene_introduction.wav">
+      <Name>Stage2_scene_introduction</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Stage3_scene_introduction.wav">
+      <Name>Stage3_scene_introduction</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+    <Compile Include="GameContent\Sounds\SE\Stage4_scene_introduction.wav">
+      <Name>Stage4_scene_introduction</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Sounds\SE\role_introduction.wav">
+      <Name>role_introduction</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Sounds\BGM\intro.wav">
+      <Name>intro</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\S_0.png">
+      <Name>S_0</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\S_1.png">
+      <Name>S_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\S_3.png">
+      <Name>S_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\BackGround\S_2.png">
+      <Name>S_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont1.spritefont">
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Images\voice.png">
+      <Name>voice</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameContent\Videos\WMV\2\Transition\Pass .wmv">
+      <Name>Pass</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
